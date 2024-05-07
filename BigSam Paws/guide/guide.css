@@ -1,0 +1,158 @@
+body{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+}
+
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.box{
+    width: 25rem; 
+    margin: 2rem;
+    text-align: center;
+    /* display: inline-block; */
+}
+
+.box img{
+    width: 100%;
+}
+
+.box{
+    color: #333;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.big-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+}
+img{
+    width: 30%;
+    height: 295px;
+    border: none;
+    border-radius: 100px;
+}
+#labrador{
+    border: 2px solid yellow;
+    border-radius: 100px;
+}
+#poodle{
+    border: 2px solid yellow;
+    border-radius: 100px;
+}
+#dobber{
+    border: 2px solid yellow;
+    border-radius: 100px;
+}
+#gr{
+    border: 2px solid yellow;
+    border-radius: 100px;
+}
+#bernese{
+    border: 2px solid yellow;
+    border-radius: 100px;
+}
+#samoyed{
+    border: 2px solid yellow;
+    border-radius: 100px;
+}
+h3{
+    border: 4px solid yellow;
+    border-radius: 15px;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+#cancel{
+    font-size: 3rem;
+}
+
+.btn{
+    background: yellow;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .7rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    color: #333;
+    position: relative;
+    box-shadow: 0 .5rem 1rem;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.btn::before{
+    
+    content: '';
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);*/
+    /*clip-path: polygon(0 0, 100% 0, 10% 35%, 0 100%);*/
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);*/
+    clip-path: polygon(0 0, 100% 0, 0% 0%, 0 100%);
+    z-index: -1;
+    background: #444;
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+
+.btn:hover:before{
+    
+    /*clip-path: polygon(0 0, 100% 0, 10% 35%, 0 100%);*/
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.btn:hover{
+    color: yellow;
+}
+
+
+/* Media Query */
+
+@media (max-width: 1200px) {
+    /* styles for large screens */
+  
+  }
+  
+  @media (max-width: 992px) {
+    /* styles for medium screens */
+    
+  }
+  
+  @media (max-width: 768px) {
+    /* styles for small screens */
+  
+    .box {
+      width: 90%;
+    }
+    
+    img {
+      width: 80%;
+    }
+  
+  }
+  
+  @media (max-width: 576px) {
+    /* styles for extra small screens */
+  
+    h3 {
+      font-size: 1.5rem;
+    }
+  
+    .btn {
+      font-size: 1rem;
+      padding: .5rem 1.5rem; 
+    }
+}

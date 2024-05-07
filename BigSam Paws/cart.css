@@ -1,0 +1,111 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+:root{
+    --yellow:#FCDD26;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+    scroll-behavior: smooth;
+    font-size: large;
+}
+/* *{
+    background-image: url(assets/v1008-25-b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter(blur): 30px;
+} */
+/* 
+*::selection{
+    background-attachment: #333;
+    color:var(--yellow);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /*height: 200rem;
+}
+
+html::-webkit-scrollbar{
+    width:1.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    width:1.3rem; 
+    background: #333;   
+}
+
+html::-webkit-scrollbar-thumb{    
+    background: var(--yellow);  
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .7rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    color: #333;
+    background: var(--yellow); 
+    position: relative;
+    box-shadow: 0 .5rem 1rem;
+    overflow: hidden;
+    z-index: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('cart-bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .cart {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .item img {
+    width: 150px;
+    margin-right: 20px; 
+  }
+  
+  .item h3,
+  .item p {
+    margin: 0;
+  }
+  
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #333;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 1.2em; 
+  }
